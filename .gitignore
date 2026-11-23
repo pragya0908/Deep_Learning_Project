@@ -1,0 +1,149 @@
+# ==============================================================================
+# Git Ignore Configuration
+# Project: Early Diabetes Risk Prediction | Deep Learning CIA 1
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Virtual Environments & Local Env Files
+# ------------------------------------------------------------------------------
+venv/
+**/venv/
+.venv/
+**/.venv/
+env/
+**/env/
+ENV/
+**/ENV/
+env.bak/
+venv.bak/
+.env
+.env.*
+!.env.example
+
+# ------------------------------------------------------------------------------
+# 2. Testing & Type Checking Caches
+# ------------------------------------------------------------------------------
+.pytest_cache/
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ------------------------------------------------------------------------------
+# 3. Jupyter & Streamlit Local Caches
+# ------------------------------------------------------------------------------
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+.streamlit/secrets.toml
+.streamlit/*.secret.toml
+
+# ------------------------------------------------------------------------------
+# 4. LaTeX Auxiliary Build Artifacts
+# (Retains report.tex and report.pdf, silences compiler build clutter)
+# ------------------------------------------------------------------------------
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex
+*.synctex.gz
+*.synctex(busy)
+*.bbl
+*.blg
+*.brf
+*.bcf
+*.run.xml
+*.nav
+*.snm
+*.vrb
+*.idx
+*.ilg
+*.ind
+*.glo
+*.gls
+*.glg
+*.ist
+*.upa
+*.upb
+
+# Ensure report.tex and report.pdf remain tracked
+!report.tex
+!report.pdf
+
+# ------------------------------------------------------------------------------
+# 5. OS & Editor / Agent Metadata
+# ------------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# IDE & Editor Settings
+.vscode/
+**/.vscode/
+.idea/
+**/.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Agent / Tool Specific Metadata
+.gemini/
+**/.gemini/
+.antigravity/
+**/.antigravity/
+
+# ------------------------------------------------------------------------------
+# 6. Explicitly Retain Submission Deliverables
+# ------------------------------------------------------------------------------
+!src/
+!app.py
+!data/
+!data/**
+!artifacts/
+!artifacts/**
+!figures/
+!figures/**
+!requirements.txt
+!README.md
+!pyproject.toml
+!pyrefly.toml
+
+# ------------------------------------------------------------------------------
+# 7. Python Bytecode & Cache (Placed last to take precedence over directory whitelists)
+# ------------------------------------------------------------------------------
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
