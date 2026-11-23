@@ -1,0 +1,38 @@
+[tool.pyrefly]
+search-path = [
+    ".",
+    "src"
+]
+disable-search-path-heuristics = false
+ignore-missing-imports = [
+    "torch.*",
+    "pandas.*",
+    "numpy.*",
+    "streamlit.*",
+    "plotly.*",
+    "seaborn.*",
+    "matplotlib.*",
+    "sklearn.*",
+    "joblib.*"
+]
+
+[tool.pyrefly.errors]
+bad-return = "ignore"
+bad-assignment = "ignore"
+bad-index = "ignore"
+bad-argument-type = "ignore"
+missing-attribute = "ignore"
+not-callable = "ignore"
+untyped-import = "ignore"
+unreachable-except-clause = "ignore"
+bad-override-param-name = "ignore"
+no-matching-overload = "ignore"
+
+[tool.pyright]
+extraPaths = [
+    ".",
+    "src"
+]
+typeCheckingMode = "off"
+reportMissingImports = false
+reportGeneralTypeIssues = false

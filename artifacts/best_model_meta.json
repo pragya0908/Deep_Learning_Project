@@ -1,0 +1,25 @@
+{
+    "winning_model": "Model A (ReLU [32, 16]) / Model E (Deep Regularized [64, 32, 16])",
+    "architecture": [
+        32,
+        16
+    ],
+    "activation": "relu",
+    "dropout_rate": 0.2,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "trainable_parameters": 833,
+    "best_val_loss": 0.5028,
+    "best_val_epoch": 9,
+    "test_metrics": {
+        "accuracy": 0.75,
+        "precision": 0.7,
+        "recall": 0.5122,
+        "f1_score": 0.5915,
+        "roc_auc": 0.8459,
+        "tn": 66,
+        "fp": 9,
+        "fn": 20,
+        "tp": 21
+    }
+}

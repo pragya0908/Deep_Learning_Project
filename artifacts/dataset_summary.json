@@ -1,0 +1,36 @@
+{
+    "total_samples": 768,
+    "num_features": 8,
+    "class_distribution": {
+        "negative_class_0": 500,
+        "positive_class_1": 268,
+        "prevalence_percent": 34.9
+    },
+    "invalid_zeros": {
+        "Glucose": 5,
+        "BloodPressure": 35,
+        "SkinThickness": 227,
+        "Insulin": 374,
+        "BMI": 11
+    },
+    "splits": {
+        "train": {
+            "samples": 537,
+            "class_0": 350,
+            "class_1": 187,
+            "percent": 69.92
+        },
+        "val": {
+            "samples": 115,
+            "class_0": 75,
+            "class_1": 40,
+            "percent": 14.97
+        },
+        "test": {
+            "samples": 116,
+            "class_0": 75,
+            "class_1": 41,
+            "percent": 15.1
+        }
+    }
+}

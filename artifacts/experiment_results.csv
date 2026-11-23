@@ -1,0 +1,6 @@
+Model_ID,Model_Name,Experiment_Set,Architecture,Activation,Dropout,Weight_Decay,Parameters,Best_Val_Epoch,Best_Val_Loss,Test_Accuracy,Test_Precision,Test_Recall,Test_F1,Test_ROC_AUC,TN,FP,FN,TP,Train_Time_s
+Model A,ReLU,Set 1: Activation Comparison,"[32, 16]",relu,0.2,0.0001,833,9,0.5028,0.75,0.7,0.5122,0.5915,0.8459,66,9,20,21,4.18
+Model B,LeakyReLU,Set 1: Activation Comparison,"[32, 16]",leaky_relu,0.2,0.0001,833,9,0.5033,0.75,0.7,0.5122,0.5915,0.8455,66,9,20,21,0.87
+Model C,Tanh,Set 1: Activation Comparison,"[32, 16]",tanh,0.2,0.0001,833,48,0.5094,0.75,0.7,0.5122,0.5915,0.8641,66,9,20,21,2.27
+Model D,Shallow (Relu),Set 2: Architecture & Regularization,[16],relu,0.0,0.0,161,24,0.509,0.7414,0.6897,0.4878,0.5714,0.8602,66,9,21,20,1.26
+Model E,Deep Regularized (Relu),Set 2: Architecture & Regularization,"[64, 32, 16]",relu,0.3,0.0001,3201,14,0.4992,0.75,0.7,0.5122,0.5915,0.8637,66,9,20,21,1.2
